@@ -1,0 +1,17 @@
+.centered-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+ul li:not(:first-child) {
+    margin-left: 20px;
+    /* Indent for second+ items */
+}

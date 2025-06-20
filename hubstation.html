@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HubStation Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>HubStation</h2>
+            <ul class="nav-links">
+                <li class="active">Dashboard</li>
+                <li>Projects</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Welcome, User</h1>
+                <button onclick="toggleTheme()">Toggle Theme</button>
+            </header>
+
+            <section class="widgets">
+                <div class="card">
+                    <h3>Total Projects</h3>
+                    <p id="projectCount">12</p>
+                </div>
+                <div class="card">
+                    <h3>Active Users</h3>
+                    <p id="userCount">4</p>
+                </div>
+                <div class="card">
+                    <h3>Messages</h3>
+                    <p id="messageCount">23</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

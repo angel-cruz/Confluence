@@ -5,42 +5,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HubStation Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="dashboard-container">
-        <aside class="sidebar">
-            <h2>HubStation</h2>
-            <ul class="nav-links">
-                <li class="active">Dashboard</li>
-                <li>Projects</li>
-                <li>Reports</li>
-                <li>Settings</li>
-            </ul>
-        </aside>
+    <div class="sidebar">
+        <h2>HubStation</h2>
+        <ul>
+            <li class="active">Analytics</li>
+            <li>CRM</li>
+            <li>eCommerce</li>
+            <li>Logistics</li>
+            <li>Academy</li>
+        </ul>
+    </div>
 
-        <main class="main-content">
-            <header class="topbar">
-                <h1>Welcome, User</h1>
-                <button onclick="toggleTheme()">Toggle Theme</button>
-            </header>
+    <div class="main">
+        <div class="header">
+            <h1>Welcome, User</h1>
+            <button onclick="openSettings()">⚙️</button>
+        </div>
 
-            <section class="widgets">
-                <div class="card">
-                    <h3>Total Projects</h3>
-                    <p id="projectCount">12</p>
-                </div>
-                <div class="card">
-                    <h3>Active Users</h3>
-                    <p id="userCount">4</p>
-                </div>
-                <div class="card">
-                    <h3>Messages</h3>
-                    <p id="messageCount">23</p>
-                </div>
-            </section>
-        </main>
+        <div class="widgets">
+            <div class="card">
+                <h3>Website Analytics</h3>
+                <p>Total 28.5% Conversion Rate</p>
+                <div class="chart-placeholder"></div>
+            </div>
+
+            <div class="card">
+                <h3>Average Daily Sales</h3>
+                <p>$28,450</p>
+                <div class="chart-placeholder"></div>
+            </div>
+
+            <div class="card">
+                <h3>Sales Overview</h3>
+                <p>$42.5k</p>
+                <div class="chart-placeholder"></div>
+            </div>
+
+            <div class="card">
+                <h3>Support Tracker</h3>
+                <p>164 Total Tickets</p>
+                <div class="circle-progress">85%</div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
